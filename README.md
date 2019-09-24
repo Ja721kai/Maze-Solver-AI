@@ -8,7 +8,7 @@ Python Interpreter ≥ 3.5 <br/>
 ### Install the environment
 Run following commands in your console:
 ```
-git clone <repo-url>
-cd Maze-Solver-AI
-pip install -r requirements.txt 
+$ git clone <repo-url>
+$ cd Maze-Solver-AI
+$ pip install -r requirements.txt 
 ```

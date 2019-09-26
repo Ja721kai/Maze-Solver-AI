@@ -10,9 +10,11 @@ class CellTest(unittest.TestCase):
 
     def test_no_constructor_given(self):
         cell = Cell()
+        self.assertEqual(cell._type(), 'X')
 
     def test_no_constructor_given2(self):
-        Cell(None)
+        cell = Cell(None)
+        self.assertEqual(cell._type(), 'X')
 
 
 if __name__ == '__main__':

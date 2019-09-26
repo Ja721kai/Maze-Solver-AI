@@ -12,6 +12,5 @@ class ICell(abc.ABC):
         assert c_type in self.allowed_types, "Given Cell Type does not exist"
         self.c_type = c_type
 
-    @abc.abstractmethod
     def _type(self):
         return self.c_type

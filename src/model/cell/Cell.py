@@ -8,6 +8,3 @@ class Cell(ICell):
             super().__init__(c_type)
         else:
             super().__init__()
-
-    def _type(self):
-        return super()._type()

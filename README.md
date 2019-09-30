@@ -1,3 +1,4 @@
+https://travis-ci.com/Ja721kai/Maze-Solver-AI.svg?branch=master
 # Maze-Solver-AI
 Single Agent Reinforcement Learning in a Maze Environment For Educational Purpose
 

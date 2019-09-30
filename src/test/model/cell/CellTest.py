@@ -17,5 +17,5 @@ class CellTest(unittest.TestCase):
         self.assertEqual(cell._type(), 'X')
 
 
-def test():
+if __name__ == '__main__':
     unittest.main(verbosity=2)

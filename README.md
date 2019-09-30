@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/Ja721kai/Maze-Solver-AI.svg?branch=master)](https://travis-ci.com/Ja721kai/Maze-Solver-AI)# Maze-Solver-AI
+[![Build Status](https://travis-ci.com/Ja721kai/Maze-Solver-AI.svg?branch=master)](https://travis-ci.com/Ja721kai/Maze-Solver-AI)
+# Maze-Solver-AI
 Single Agent Reinforcement Learning in a Maze Environment For Educational Purpose
 
 # Getting Started

@@ -1,5 +1,6 @@
 import pytest
 from src.model.cell.Cell import Cell
+from src.model.cell.MockCell import MockCell
 
 
 def test_non_existent_constructor_parameter():
@@ -34,3 +35,7 @@ def test_available_types():
         cell = Cell(c_type=type)
         assert cell._type() == type
 
+        
+def test_mock_impl():
+    cell = MockCell()
+    assert cell._type() == 'X'

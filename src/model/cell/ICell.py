@@ -14,3 +14,6 @@ class ICell(abc.ABC):
 
     def _type(self):
         return self.c_type
+
+    def get_allowed_types(self):
+        return self.allowed_types

@@ -17,7 +17,7 @@ $ pip install -r requirements.txt
 
 # Reinforcement Learning mixed with Model-View-Controller
 Commonly the agent and the environment communicate directly and exchange actions with observations and rewards. This is the communication architecture that I will be using for this project. 
-![MVC/RL Image](misc/Maze-Solver%20Architecture.png)
+![MVC/RL Image](misc/Maze-Solver%20Architecture.png)  
 For a common RL architecture refer to:  
 [Reinforcement Learning Architecture](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)  
 For typical Model-View-Controller refer to:  

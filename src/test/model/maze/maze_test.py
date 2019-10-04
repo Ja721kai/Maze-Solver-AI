@@ -30,6 +30,21 @@ def test_constructing_with_cellarray():
     assert maze.grid.all() == cell_array.all()
 
 
+def test_constructing_with_wrong_gridshape():
+    with pytest.raises(AssertionError):
+        Maze(grid_shape=(5, 5, 4))
+
+
+def test_constructing_with_wrong_gridshape2():
+    with pytest.raises(TypeError):
+        Maze(grid_shape=5)
+
+
+def test_constructing_with_wrong_gridshape3():
+    with pytest.raises(AssertionError):
+        Maze(grid_shape=(5,))
+
+
 def test_to_string():
     wall = Cell('X')
     ground = Cell('_')
@@ -39,4 +54,10 @@ def test_to_string():
     maze = Maze(cell_array=cell_array)
     maze_string = maze.to_string()
     assert maze_string == "X-X-X\n_-_-_\nX-X-X"
+
+
+def test_to_string2():
+    maze = Maze()
+    maze_string = maze.to_string()
+    assert maze_string == (("X-" * 9 + "X\n") * 10)[:-1]
 

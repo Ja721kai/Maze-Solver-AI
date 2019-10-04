@@ -7,4 +7,4 @@ class MockMaze(IMaze):
         super().__init__()
 
     def to_string(self):
-        return ""
+        return super().to_string()

@@ -1,4 +1,6 @@
 import pytest
+import numpy as np
+from src.model.cell.Cell import Cell
 from src.model.maze.Maze import Maze
 from src.model.maze.MockMaze import MockMaze
 
@@ -10,7 +12,18 @@ def test_mock_impl():
 
 def test_empty_constructor():
     maze = Maze()
-    # think about what to do 
+    assert np.shape(maze.grid) == (10, 10)  # decided on (10, 10) to be standard maze size
 
 
+def test_constructing_with_cellarray():
+    wall = Cell('X')
+    ground = Cell('_')
+    cell_array = np.array([[wall, wall, wall],
+                           [ground, ground, ground],
+                           [wall, wall, wall]])
+    maze = Maze(cell_array=cell_array)
+    assert maze.grid.all() == cell_array.all()
 
+
+if __name__ == '__main__':
+    test_constructing_with_cellarray()
